@@ -27,6 +27,9 @@ SECRET_KEY = 'django-insecure-k$ba7b-t+um^d(meqhs!qt##_9mzq(+8@lfngivtgx!n%q716c
 DEBUG = True
 ALLOWED_HOSTS = [os.environ.get('RENDER_EXTERNAL_HOSTNAME', '127.0.0.1')]
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://login-sp-1.onrender.com",
+]
 
 # Application definition
 
